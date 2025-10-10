@@ -50,18 +50,31 @@ public class GameEngine {
             return new GuessResult(false, "Too low! Try a higher number.", attempts);
         } else {
             return new GuessResult(false, "Too high! Try a lower number.", attempts);
+<<<<<<< HEAD
 =======
         } else {
             String hint = getHint(guess);
+=======
+        } else if (attempts >= MAX_ATTEMPTS) {
+            gameOver = true;
+            return new GuessResult(false, "Game Over! You've used all " + MAX_ATTEMPTS + " attempts. The number was " + target + ".", attempts);
+        } else {
+            int remaining = MAX_ATTEMPTS - attempts;
+>>>>>>> 3c07113 (Fixed additional conflicts during rebase on)
             GuessResult result;
             if (guess < target) {
                 result = new GuessResult(false, "Too low!", attempts);
             } else {
                 result = new GuessResult(false, "Too high!", attempts);
             }
+<<<<<<< HEAD
             result.setHint(hint);
             return result;
 >>>>>>> d8834ce (# This is a combination of 3 commits.)
+=======
+            result.setRemainingAttempts(remaining);
+            return result;
+>>>>>>> 3c07113 (Fixed additional conflicts during rebase on)
         }
     }
 
@@ -80,7 +93,7 @@ public class GameEngine {
     public boolean hasUserQuit() {
         return userQuit;
     }
-    
+
     public boolean isGameOver() {
         return gameOver;
     }
