@@ -1,4 +1,6 @@
 public class GameEngine {
+    private static final int MAX_ATTEMPTS = 10;
+
     private final int min;
     private final int max;
     private int target;
@@ -6,9 +8,13 @@ public class GameEngine {
     private boolean gameWon;
 <<<<<<< HEAD
     private boolean userQuit;
+<<<<<<< HEAD
 =======
     private boolean hintsEnabled;
 >>>>>>> f1097b6 (started hint)
+=======
+    private boolean gameOver;
+>>>>>>> ef8ada1 (Fixed conflicts that occured when rebasing)
 
     public GameEngine(int min, int max) {
         this.min = min;
@@ -17,9 +23,13 @@ public class GameEngine {
         this.gameWon = false;
 <<<<<<< HEAD
         this.userQuit = false;
+<<<<<<< HEAD
 =======
         this.hintsEnabled = true;
 >>>>>>> f1097b6 (started hint)
+=======
+        this.gameOver = false;
+>>>>>>> ef8ada1 (Fixed conflicts that occured when rebasing)
         reset();
     }
 
@@ -60,6 +70,7 @@ public class GameEngine {
         attempts = 0;
         gameWon = false;
         userQuit = false;
+        gameOver = false;
     }
 
     public boolean isGameWon() {
@@ -69,9 +80,17 @@ public class GameEngine {
     public boolean hasUserQuit() {
         return userQuit;
     }
+    
+    public boolean isGameOver() {
+        return gameOver;
+    }
 
     public int getAttempts() {
         return attempts;
+    }
+
+    public int getMaxAttempts() {
+        return MAX_ATTEMPTS;
     }
 
     public int getMin() {
