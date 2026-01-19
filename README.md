@@ -25,3 +25,13 @@ Use this project to practice:
 - feature1 added the ability to quit the game and improved user functionality
 - feature2 added additional logic for max attempts and game over
 - feature3 added hint mechanics and changed UI implementation
+
+## Learning Summary
+- Merge combines one branch with another, this works well with collaboration becuase the history is perserved
+- Rebase combines the commits from one branch to another, this one creates a linear history
+- Squash condenses multiple commits into a single commit
+- Cherry-Pick allows you to apply specific commits from one branch to another
+
+- Each feature branch was used to implement a different idea into the main program without interfering with one another. This helped to ensure that each feature worked independently of the others, with is helpful when merging becuase you know if something is no longer working something went wrong in the merge.
+
+- Each of the above strategies are important and useful in a team setting. Merge is a great way to work in collaboration with another developer(s). This way all developers can work independently and when they are done with their tasks, they can share it with the team. Rebasing is important to make sure everything stays up to date with the changes made by other team members. Squash is helpful because it can help clean up a messy commit history, for example several in progross commits can be condense into a final commit when all the work is done. Cherry-pick is useful because you can pick imporant commits that need to be moved and don't have to waste your time rebasing the entire branch.
