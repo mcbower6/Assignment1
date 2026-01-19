@@ -24,4 +24,4 @@ Use this project to practice:
 ## Changes
 - feature1 added the ability to quit the game and improved user functionality
 - feature2 added additional logic for max attempts and game over
-- feature3 
+- feature3 added hint mechanics and changed UI implementation
