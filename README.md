@@ -20,3 +20,8 @@ Use this project to practice:
 - `GameUI.java` - contains the UI for the number guessing game
 - `Utils.java` - contains the mechanic for determining correct guess
 - `GuessResult.java` - contains the logic for guessing the random number
+
+## Changes
+- feature1 added the ability to quit the game and improved user functionality
+- feature2 added additional logic for max attempts and game over
+- feature3 
